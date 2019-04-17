@@ -1,0 +1,14 @@
+<main>
+  <app-header></app-header>
+  <section>
+    <div>
+      <app-mediaplayer [currentVideo]="currentVideo"></app-mediaplayer>
+    </div>
+    <div>
+      <app-playlist
+        [videos]="playlist"
+        (videoClicked)="onVideoChange($event)"
+      ></app-playlist>
+    </div>
+  </section>
+</main>
